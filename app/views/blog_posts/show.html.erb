@@ -1,0 +1,15 @@
+<h1> <%= @blog_post.title %> </h1>
+<hr />
+
+<h3> <%= @blog_post.author %>
+
+<blockquote>
+  <%= @blog_post.body %>
+</blockquote>
+
+<i>
+  Posted At <%= @blog_post.created_at %>
+</i>
+
+<br />
+<%= link_to 'All Posts', blog_posts_path %>
